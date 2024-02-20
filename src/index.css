@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  font-family: "Roboto Mono", monospace;
+  line-height: 1.5;
+  font-weight: 400;
+  /*cores*/
+  --verde: #0dbd91;
+  --azul-claro: #0255f0ef;
+  --azul-escuro: #020735ce ;
+  background-color: #F5F5F5;
+  color: black;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.logo {
+  font-size: 35px;
+  background: linear-gradient(to right, var(--verde), var(--azul-claro));
+  -webkit-background-clip: text;
+  color: transparent;
+  align-self: flex-start; /* Alinha ao canto superior esquerdo */
+  
+}
+
+.navbar {
+  margin: 30px;
+  align-self: flex-end; /* Mantém a navbar no canto superior direito */
+
+  font-size: 20px;
+  color: var(--azul-escuro);
+  position: fixed;
+  top: 0; /* Fixa a barra no topo da tela */
+  width: 100%; /* Faz com que a barra ocupe toda a largura da tela */
+  z-index: 1000;
+}
+.navbar a {
+  margin-left: 20px; /* Adiciona espaço entre as palavras */
+  text-decoration: none; /* Remove a decoração de link padrão */
+}
+
+
