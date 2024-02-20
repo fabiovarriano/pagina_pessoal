@@ -1,0 +1,28 @@
+.typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+  }
+  
+  .cursor {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.15em;
+    height: 1em;
+    background-color: black;
+    animation: blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      background-color: transparent;
+    }
+    50% {
+     
+    }
+  }
+  

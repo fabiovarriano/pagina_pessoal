@@ -5,38 +5,39 @@
   text-align: center;
 }
 
+.home{
+  display: flex;
+}
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  padding-top: 100px;
+  font-size: 35px;
+  background: linear-gradient(to right, var(--verde), var(--azul-claro));
+  -webkit-background-clip: text;
+  color: transparent;
+  float: left;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text{
+  color:var(--azul-escuro);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navbar {
+  margin: 30px;
+  align-self: flex-end; /* Mantém a navbar no canto superior direito */
+
+  font-size: 20px;
+  color: var(--azul-claro);
+  position: fixed;
+  top: 0; /* Fixa a barra no topo da tela */
+  width: 100%; /* Faz com que a barra ocupe toda a largura da tela */
+  z-index: 1000;
+}
+.navbar a {
+  margin-left: 20px; /* Adiciona espaço entre as palavras */
+  text-decoration: none; /* Remove a decoração de link padrão */
 }
 
-.card {
-  padding: 2em;
+.imagem{
+    float: right;
 }
 
-.read-the-docs {
-  color: #888;
-}

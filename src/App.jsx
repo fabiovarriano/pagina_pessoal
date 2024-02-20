@@ -1,8 +1,12 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
+import TypingAnimation from './TypingAnimation';
+
+
 
 function App() {
   const [count, setCount] = useState(0)
+  const texts = ["data analytics", "mercado Financeiro", "cooperativismo", "estratégias de crédito"];
 
   return (
     <div>
@@ -16,14 +20,23 @@ function App() {
         </nav>
       </div>
       <div>
-        <div>
+        <div class = "home">
           <header class="logo">
-            <h1>Olá,</h1>
+            <h1>Olá</h1>
+            <TypingAnimation texts={texts} speed={100} />
+  
           </header>
-          <n>
-            Este é meu espaço para praticar e compartilhar o que estou sempre aprendendo.
-          </n>
+
+          <div class = "imagem">
+            <img src = "./src/imagem/logo.png" alt = "imagem"></img>
+          </div>
         </div>
+
+ 
+    
+          
+       
+
       </div>
       
       
